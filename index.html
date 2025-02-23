@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map with Mapbox</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!--Mapbox-->
+    <link rel="stylesheet" href="mapbox://styles/griggkyl/cm7dotogg002g01sg8aclfwgt"/>
+   <!--CSS--> 
+    <link rel="stylesheet" href="css/lab4.css"/>
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+        #map2 {
+            height: 600px;
+            width: 100%;
+        }
+           /* Styling for the legend */
+    .info.legend {
+        line-height: 18px;
+        color: #555;
+        background-color: white;
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .info.legend2 {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    </style>
+</head>
+<body>
+    <h1 id="header"> Lab 4- Making Beautiful Basemaps</h1>
+    <p id = "myname"> Kylie Griggs - GEOG 572, Winter 2025</p>
+    <p id="mp1"> Places of Worship Throughout Mexico</p>
+    <div id="map"></div> <!-- The div where the map will be rendered -->
+    <p id="description"> This map includes data from {}. This is not a fully represeentative map, as I have excluded places for which a name was not specified</p>
+    <!-- Leaflet JS (make sure this is before your custom JS) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Your custom JS (this is the file where you use the "L" object) -->
+    <script src="js/lab4.js"></script>
+</body>
+</html>
